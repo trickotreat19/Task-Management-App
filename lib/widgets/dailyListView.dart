@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:task_management/models/tasks.dart';
 
@@ -17,8 +18,15 @@ class DailyListView extends StatelessWidget {
             return Card(
               elevation: 7,
               child: ListTile(
-                title: Text(dailyListView[index].title, style: const TextStyle(fontSize: 20),),
-                        subtitle: Text(dailyListView[index].subTasks.toString()),
+                title: AutoSizeText(dailyListView[index].title, style: const TextStyle(fontSize: 20),
+                minFontSize: 16,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                ),
+                        subtitle: AutoSizeText(dailyListView[index].subTasks.toString(),style: const TextStyle(fontSize: 18),
+                minFontSize: 10,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,),
                         
               ),
             );

@@ -35,8 +35,8 @@ class _MyHomePageState extends State<_MyHomePage> {
   final List<Tasks> _taskList = [
     Tasks(
         id: '1',
-        title: 'Task1sadasdadsadadadaadaddasa',
-        subTasks: ['SubTask1', 'Subtask2', 'subtask3', 'subtask4'],
+        title: 'Task1sadasdadsadadadaadaddasaadsadadsasdsadadasdasdasdasdasdasdasdad',
+        subTasks: ['SubTask1', 'Subtask2', 'subtask3', 'subtask4','SubTask1', 'Subtask2', 'subtask3', 'subtask4'],
         time: DateTime.now().add(Duration(days: 1))),
     Tasks(
         id: '2',
