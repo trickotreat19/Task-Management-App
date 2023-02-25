@@ -25,7 +25,11 @@ class Lists extends StatelessWidget {
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
               ),
-              subtitle: Text(after7DaysData[index].subTasks.toString()),
+              subtitle: AutoSizeText(after7DaysData[index].subTasks.toString(),
+              style: const TextStyle(fontSize: 18),
+                        minFontSize: 10,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,),
             ),
           );
         },
